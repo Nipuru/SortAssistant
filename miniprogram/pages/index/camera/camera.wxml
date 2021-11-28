@@ -1,0 +1,23 @@
+<view class="photo" style="width: 100%; height:calc(100vh - 200rpx);">
+  <camera style="width: 100%; height:100%;" wx:if="{{isCamera}}" device-position="back"
+  flash="off" binderror="error" ></camera>
+  <image style="width: 100%; height:50%;"  wx:else mode="widthFix" src="{{src}}"></image>
+</view>
+
+<view class='photo-view'>
+ <view class='takePhoto' bindtap="takePhoto">{{btnTxt}}</view>
+</view>
+
+<view class="list" wx:if="{{isShow}}">
+  <view class="title">检测结果</view>
+  <block wx:for="{{results}}" wx:if="{{item.lajitype!=4}}">
+    <view class="item-view">
+      <view class="name">{{item.name}}</view>
+      <view class="type">{{type[item.lajitype]}}</view>
+      <view class="tips">
+        <view class="tips_l">提示：</view>
+        <view class="tips_r">{{item.lajitip}}</view>
+      </view>
+    </view>
+  </block>
+</view>

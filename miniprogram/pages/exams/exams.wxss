@@ -1,0 +1,117 @@
+/* pages/exams/exams.wxss */
+page{
+  background:linear-gradient(131deg,rgba(139,215,145,1) 0%,rgba(55,178,97,1) 100%);
+}
+.bg-gray{
+  background-color: rgb(246, 246, 246);
+}
+.bg-white{
+  background-color: rgb(255, 255, 255);
+}
+.swiper_container {
+  height: 1050rpx;
+  width: 90%;
+  margin: auto;
+}
+.describe{
+  margin: 60rpx 0;
+  text-align: center;
+  font-size: 30px;
+}
+.options{
+  margin: 50rpx auto;
+  width: 200px;
+  text-align: center;
+  font-weight: 400;
+  background-color: white;
+  border: 1px solid rgb(216, 216, 216);
+  border-radius: 50px;
+}
+.op0:hover{
+  border: 1px solid rgb(110, 204, 142);
+  background-color:rgb(227, 243, 242);
+}
+.op1:hover{
+  border: 1px solid rgb(248, 224, 171);
+  background-color:rgb(254, 252, 240);
+}
+.op2:hover{
+  border: 1px solid rgb(176, 190, 203);
+  background-color:rgb(241, 245, 246);
+}
+.op3:hover{
+  border: 1px solid rgb(240, 200, 196);
+  background-color:rgb(255, 245, 244);
+}
+.scoreboard{
+  background-color: white;
+  width: 95%;
+  height: 890rpx;
+  margin:30rpx auto;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,.2);
+}
+.title{
+  text-align: center;
+  font-size: 20px;
+  padding-top: 60rpx;
+}
+.score{
+  text-align: center;
+  font-weight: 800;
+  padding: 20rpx 0;
+  color: rgba(235, 0, 0, 0.919);
+}
+.table{
+  border-top: 1px solid rgb(216, 216, 216);
+  border-bottom: 1px solid rgb(216, 216, 216);
+}
+.tr{
+  display: flex;
+  justify-content: start;
+}
+.c0{
+  padding-left: 5px;
+  display: block;
+  box-sizing: border-box;
+  width: 10%;
+}
+.c1{
+  display: block;
+  box-sizing: border-box;
+  width: 40%;
+}
+.c2{
+  display: block;
+  box-sizing: border-box;
+  border-left: 1px solid rgb(216, 216, 216);
+  width: 25%;
+  text-align: center;
+}
+.c3{
+  display: block;
+  box-sizing: border-box;
+  border-left: 1px solid rgb(216, 216, 216);
+  width: 25%;
+  text-align: center;
+}
+.th{
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 60rpx;
+}
+.td{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 60rpx;
+}
+.sty{
+  text-decoration:line-through;
+}
+.bottomBtn{
+  margin: 20rpx;
+  width:252rpx;
+  height:80rpx;
+  background:rgba(255,255,255,1);
+  border-radius:9px;
+}

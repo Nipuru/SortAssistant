@@ -1,0 +1,35 @@
+<!--index.wxml-->
+<view class="topSearch">
+
+  <view class="searchitem">
+    <image class="soushuo" src="/images/index/soushuo.png"></image>
+    <input class="searchtext" type="text" placeholder="你是什么垃圾？" bindtap="goSearch" disabled="disabled"></input>
+  </view>
+
+  <image class="exam" bindtap="goExams" src="/images/index/exam.png"></image>
+</view>
+<view class="pai1">
+ <image class="pai" bindtap="goCamera" src="/images/index/camera.png"></image>
+</view>
+<view class="paitext">拍照小垃圾</view>
+
+
+<view class="box">
+  <view class="list" wx:for="{{sortImages}}"  bindtap="choseType" data-index="{{index}}" wx:key="url">
+    <image class="img" src="{{item.url}}"></image>
+    <view class="type">{{item.type}}</view>
+  </view>
+</view>
+
+
+  <view class="left">
+  <view class="right">这个垃圾最常用</view>
+  </view>
+
+<view class="middle">
+    <view class="inner" wx:for="{{ColorList}}" bindtap="onClick"  data-type='{{index}}'>
+       <view class="name">{{item.name}}</view>
+       <view class="content">{{item.content}}</view>
+      <image class="icon" src='{{item.url}}'></image>
+    </view>
+  </view>

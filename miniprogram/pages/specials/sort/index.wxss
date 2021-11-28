@@ -1,0 +1,29 @@
+/* pages/specials/sort/index.wxss */
+.list{
+  width: 95%;
+  height: 150rpx;
+  background-color: rgb(227, 243, 242);
+  border-radius: 20rpx;
+  margin: 40rpx auto;
+  box-shadow:0rpx 11.7rpx 11.7rpx 0rpx #E3F3F2;
+}
+.list image{
+  width: 100rpx;
+  height: 100rpx;
+  margin: auto 25rpx;
+  vertical-align: middle;
+}
+.list title{
+  padding-left: 80rpx;
+  line-height: 150rpx;
+  font-weight:600;
+  color: black;
+}
+.list text{
+  line-height: 150rpx;
+  text-align: left;
+  width: 70px;
+  font-weight:600;
+  float: right;
+  margin-right:40rpx;
+}

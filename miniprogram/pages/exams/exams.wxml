@@ -1,0 +1,40 @@
+<!-- pages/exams/exams.wxml -->
+
+<swiper class="swiper_container" duration='400' circular="true" current="{{cur}}" wx:if="{{isShow}}">
+  <block wx:for="{{list}}" wx:key="id">
+    <swiper-item catchtouchmove='catchTouchMove'>
+      <view class="seq">{{index+1}}/{{list.length}}</view>
+      <view class="describe">{{item.describe}}</view>
+      <button class="options op{{chose}}" wx:for="{{options}}" wx:for-item="option" wx:for-index="chose" bindtap="onChose" data-title='{{index}}' data-chose="{{chose}}" wx:if="{{chose!=4}}">{{option}}</button>
+    </swiper-item>
+  </block>
+  <swiper-item catchtouchmove='catchTouchMove'>
+    <view class="scoreboard">
+      <view class="title">垃圾分类统一考试</view>
+      <view class="score">分数:{{score}}分</view>
+      <view class="table">
+        <view class="tr bg-gray">
+          <text class="td c0"></text>
+          <text class="th c1">题目</text>
+          <text class="th c2">我的答案</text>
+          <text class="th c3">正确答案</text>
+        </view>
+        <block wx:for="{{list}}" wx:key="id">
+          <view class="tr bg-gray" wx:if="{{index%2==1}}">
+            <text class="td c0">{{index+1}}、</text>
+            <text class="td c1">{{item.describe}}</text>
+            <text class='td c2 {{item.chose!=item.answer?"sty":""}}'>{{options[item.chose]}}</text>
+            <text class="td c3">{{options[item.answer]}}</text>
+          </view>
+          <view class="tr bg-white" wx:else>
+            <text class="td c0">{{index+1}}、</text>
+            <text class="td c1">{{item.describe}}</text>
+            <text class='td c2 {{item.chose!=item.answer?"sty":""}}'>{{options[item.chose]}}</text>
+            <text class="td c3">{{options[item.answer]}}</text>
+          </view>
+        </block>
+      </view>
+    </view>
+    <button class="bottomBtn" bindtap="onRestart">重新开始</button>
+  </swiper-item>  
+</swiper>

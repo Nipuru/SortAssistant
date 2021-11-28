@@ -1,0 +1,30 @@
+<view wx:if="{{type == 1}}" class="list" wx:for="{{lobster}}">
+  <image src="{{item.img}}"></image>
+  <title>{{item.describe}}</title>
+  <text style="color: {{item.color}};">{{item.type}}</text>
+</view>
+<view wx:if="{{type == 2}}" class="list" wx:for="{{zongzi}}">
+  <image src="{{item.img}}"></image>
+  <title>{{item.describe}}</title>
+  <text style="color: {{item.color}};">{{item.type}}</text>
+</view>
+<view wx:if="{{type == 3}}" class="list" wx:for="{{tea}}">
+  <image src="{{item.img}}"></image>
+  <title>{{item.describe}}</title>
+  <text style="color: {{item.color}};">{{item.type}}</text>
+</view>
+<view wx:if="{{type == 4}}" class="list" wx:for="{{takeout}}">
+  <image src="{{item.img}}"></image>
+  <title>{{item.describe}}</title>
+  <text style="color: {{item.color}};">{{item.type}}</text>
+</view>
+<view wx:if="{{type == 5}}" class="list" wx:for="{{cosmetics}}">
+  <image src="{{item.img}}"></image>
+  <title>{{item.describe}}</title>
+  <text style="color: {{item.color}};">{{item.type}}</text>
+</view>
+<view wx:if="{{type == 6}}" class="list" wx:for="{{battery}}">
+  <image src="{{item.img}}"></image>
+  <title>{{item.describe}}</title>
+  <text style="color: {{item.color}};">{{item.type}}</text>
+</view>
